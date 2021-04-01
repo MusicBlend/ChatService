@@ -14,7 +14,7 @@ COPY ChatService/. ./ChatService/
 COPY ChatService.Persistence/. ./ChatService.Persistence/
 COPY ChatService.Domain/. ./ChatService.Domain/
 #
-WORKDIR /app/ChatService.
+WORKDIR /app/ChatService
 RUN dotnet publish -c Release -o out 
 #
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
