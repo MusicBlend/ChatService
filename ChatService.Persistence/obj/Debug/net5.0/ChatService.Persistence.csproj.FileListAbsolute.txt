@@ -1,0 +1,15 @@
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Persistence.deps.json
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Persistence.runtimeconfig.json
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Persistence.runtimeconfig.dev.json
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Persistence.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ref\ChatService.Persistence.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Persistence.pdb
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.csprojAssemblyReference.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.AssemblyInfoInputs.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.AssemblyInfo.cs
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ref\ChatService.Persistence.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.pdb
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.genruntimeconfig.cache

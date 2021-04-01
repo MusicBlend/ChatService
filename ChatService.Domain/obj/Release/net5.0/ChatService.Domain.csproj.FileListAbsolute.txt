@@ -1,0 +1,12 @@
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\bin\Release\net5.0\ChatService.Domain.deps.json
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\bin\Release\net5.0\ChatService.Domain.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\bin\Release\net5.0\ref\ChatService.Domain.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\bin\Release\net5.0\ChatService.Domain.pdb
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.csprojAssemblyReference.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.AssemblyInfoInputs.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.AssemblyInfo.cs
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ref\ChatService.Domain.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Domain\obj\Release\net5.0\ChatService.Domain.pdb

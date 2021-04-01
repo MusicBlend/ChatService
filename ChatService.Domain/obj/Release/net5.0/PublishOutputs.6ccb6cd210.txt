@@ -1,0 +1,17 @@
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\ChatService.Domain.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\ChatService.Domain.deps.json
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\ChatService.Domain.pdb
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.EntityFrameworkCore.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Logging.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Options.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Microsoft.Extensions.Primitives.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\MySqlConnector.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\out\Pomelo.EntityFrameworkCore.MySql.dll
