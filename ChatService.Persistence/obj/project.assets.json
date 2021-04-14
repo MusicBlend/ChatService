@@ -254,6 +254,19 @@
         "runtime": {
           "lib/net5.0/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "ChatService.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Pomelo.EntityFrameworkCore.MySql": "5.0.0-alpha.2"
+        },
+        "compile": {
+          "bin/placeholder/ChatService.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChatService.Domain.dll": {}
+        }
       }
     }
   },
@@ -815,10 +828,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ChatService.Domain/1.0.0": {
+      "type": "project",
+      "path": "../ChatService.Domain/ChatService.Domain.csproj",
+      "msbuildProject": "../ChatService.Domain/ChatService.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ChatService.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
       "Pomelo.EntityFrameworkCore.MySql >= 5.0.0-alpha.2"
@@ -860,7 +879,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dylan Picus\\Documents\\Vault\\ICT\\S3-DB01\\MusicBlend\\ChatService\\ChatService.Domain\\ChatService.Domain.csproj": {
+              "projectPath": "C:\\Users\\Dylan Picus\\Documents\\Vault\\ICT\\S3-DB01\\MusicBlend\\ChatService\\ChatService.Domain\\ChatService.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

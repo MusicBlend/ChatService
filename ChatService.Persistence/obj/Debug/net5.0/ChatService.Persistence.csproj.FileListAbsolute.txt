@@ -13,3 +13,6 @@ C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatServ
 C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ref\ChatService.Persistence.dll
 C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.pdb
 C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.genruntimeconfig.cache
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Domain.dll
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\bin\Debug\net5.0\ChatService.Domain.pdb
+C:\Users\Dylan Picus\Documents\Vault\ICT\S3-DB01\MusicBlend\ChatService\ChatService.Persistence\obj\Debug\net5.0\ChatService.Persistence.csproj.CopyComplete

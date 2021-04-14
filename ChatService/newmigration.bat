@@ -1,0 +1,1 @@
+﻿dotnet ef migrations add %1 -c AppDbContext -o ../ChatService.Persistence/Migrations/ -p ../ChatService.Persistence/ChatService.Persistence.csproj

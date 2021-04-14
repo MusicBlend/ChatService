@@ -101,7 +101,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Dylan Picus\\Documents\\Vault\\ICT\\S3-DB01\\MusicBlend\\ChatService\\ChatService.Domain\\ChatService.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dylan Picus\\Documents\\Vault\\ICT\\S3-DB01\\MusicBlend\\ChatService\\ChatService.Domain\\ChatService.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

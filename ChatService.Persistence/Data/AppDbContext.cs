@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ChatService.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChatService.Persistence.Data
 {
@@ -8,5 +9,10 @@ namespace ChatService.Persistence.Data
         {
             
         }
+        public DbSet<ChatMessage> ChatMessages { get; set; }
+        public DbSet<Community> Communities { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Connection> Connections { get; set; }
+        
     }
 }

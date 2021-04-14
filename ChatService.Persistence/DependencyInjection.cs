@@ -1,5 +1,8 @@
 ﻿using System;
+using ChatService.Domain.Entities;
+using ChatService.Domain.Interfaces.IRepository;
 using ChatService.Persistence.Data;
+using ChatService.Persistence.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
@@ -20,7 +23,9 @@ namespace ChatService.Persistence
                     .EnableDetailedErrors();
             });
 
-            //services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IChatMessageRepository, ChatMessageRepository>();
+            services.AddTransient<ICommunityRepository, CommunityRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
 
             return services;
         }
