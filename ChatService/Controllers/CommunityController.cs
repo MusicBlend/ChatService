@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChatService.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class CommunityController : ControllerBase
     {
         private readonly ICommunityRepository _communityRepository;
@@ -16,35 +18,11 @@ namespace ChatService.Controllers
         {
             _communityRepository = communityRepository;
         }
-        
-        public async Task CreateCommunity(string communityName, string userId, string userName, string connectionId)
+
+        [HttpGet("/GetCommunities/{userId}")]
+        public async Task<IEnumerable<string>> GetCommunities(string userId)
         {
-            Connection newConnection = new Connection()
-            {
-                ConnectionId = connectionId
-            };
-            
-            User firstUser = new User()
-            {
-                Id = userId,
-                Admin = true,
-                Name = userName,
-            };
-            
-            Community newCommunity = new Community()
-            {
-                Id = Guid.NewGuid(),
-                CommunityName = communityName,
-                RoomCode = GenerateRoomCode(),
-            };
-            firstUser.Connections.Add(newConnection);
-            newCommunity.Users.Add(firstUser);
-            await _communityRepository.CreateCommunity(newCommunity);
-        }
-        public string GenerateRoomCode()
-        {
-            UniqueId uniqueId = new UniqueId();
-            return uniqueId.GetBase36(6);
+            return await _communityRepository.GetUserCommunities(userId);
         }
         
     }
