@@ -97,6 +97,7 @@ namespace ChatService.Hubs
                 await _communityRepository.CreateCommunity(newCommunity);
             }
         }
+        
         private string GenerateRoomCode()
         {
             UniqueId uniqueId = new UniqueId();
