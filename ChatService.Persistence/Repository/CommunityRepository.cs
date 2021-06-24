@@ -35,7 +35,13 @@ namespace ChatService.Persistence.Repository
             var comm = await _dbContext.Communities.FirstOrDefaultAsync(x => x.RoomCode == roomCode);
             return comm;
         }
-
+        public async Task<Community> GetById(string communityId)
+        {
+            var id = Guid.Parse(communityId);
+            var comm = await _dbContext.Communities
+                .FindAsync(id);
+            return comm;
+        }
         public async Task<bool> UserExists(string userId)
         {
             var user = await _dbContext.Users.FindAsync(userId);
@@ -54,25 +60,32 @@ namespace ChatService.Persistence.Repository
             _dbContext.Communities.Update(community);
             await _dbContext.SaveChangesAsync();
         }
-
-        public async Task<List<string>> GetUserCommunities(string userId)
+        
+        public async Task<List<Community>> GetUserCommunities(string userId)
         {
-            var communityIds = new List<string>();
+            var userCommunities = new List<Community>();
             
             var communities = await _dbContext.Communities
                 .Include(c => c.Users)
                 .ToListAsync();
+            
             foreach (var community in communities)
             {
                 foreach (var communityUser in community.Users)
                 {
                     if (userId == communityUser.Id)
                     {
-                        communityIds.Add(community.Id.ToString());
+                        Community comm = new Community()
+                        {
+                            Id = community.Id,
+                            CommunityName = community.CommunityName,
+                            RoomCode = community.RoomCode
+                        };
+                        userCommunities.Add(comm);
                     }
                 }
             }
-            return communityIds; 
+            return userCommunities; 
         }
     }
 }

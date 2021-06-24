@@ -12,6 +12,7 @@ namespace ChatService.Domain.Interfaces.IRepository
         Task<User> GetUser(string userId);
         Task CreateUser(User user);
         Task AddUserToCommunity(string userId, string roomCode);
-        Task<List<string>> GetUserCommunities(string userId);
+        Task<List<Community>> GetUserCommunities(string userId);
+        Task<Community> GetById(string communityId);
     }
 }

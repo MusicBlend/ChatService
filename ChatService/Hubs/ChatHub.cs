@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace ChatService.Hubs
 {
-    public class ChatHub : Hub<IChatClient>
+    public class ChatHub : Hub
     {
         private readonly ICommunityRepository _communityRepository;
         public ChatHub(ICommunityRepository communityRepository)
@@ -17,7 +17,7 @@ namespace ChatService.Hubs
         }
         public async Task SendMessage(ChatMessage message)
         {
-            await Clients.All.ReceiveMessage(message);
+            await Clients.All.SendAsync("ReceiveMessage", message);
         }
 
         // public async Task JoinCommunity(string communityName)
@@ -25,21 +25,24 @@ namespace ChatService.Hubs
         //     await Groups.AddToGroupAsync(Context.ConnectionId, communityName);
         // }
         
-        // public async Task SendMessageToCommunity(string communityName, ChatMessage message)
-        // {
-        //     await Clients.Group(communityName).ReceiveMessage(message);
-        // }
+        public async Task SendMessageToCommunity(string communityId, ChatMessage message)
+        {
+            Console.WriteLine(message.Message);
+            Console.WriteLine(communityId);
+            await Clients.Group(communityId).SendAsync("ReceiveMessage", message);
+        }
         public async Task CreateCommunity(string communityName, string userId)
         {
-            await Groups.AddToGroupAsync(Context.ConnectionId, communityName);
-            await SaveCommunity(communityName, userId, Context.ConnectionId);
+            Guid communityId = Guid.NewGuid();
+            await Groups.AddToGroupAsync(Context.ConnectionId, communityId.ToString());
+            await SaveCommunity(communityId, communityName, userId, Context.ConnectionId);
         }
         public async Task JoinCommunity(string userId, string roomCode)
         {
             roomCode = roomCode.Replace(" ", "");
             var community = await _communityRepository.FindCommunity(roomCode);
 
-            await Groups.AddToGroupAsync(Context.ConnectionId, community.CommunityName);
+            await Groups.AddToGroupAsync(Context.ConnectionId, community.Id.ToString());
 
             bool userExists = await _communityRepository.UserExists(userId);
             
@@ -65,7 +68,7 @@ namespace ChatService.Hubs
             }
         }
         
-        private async Task SaveCommunity(string communityName, string userId, string connectionId)
+        private async Task SaveCommunity(Guid communityId, string communityName, string userId, string connectionId)
         {
             Connection newConnection = new Connection()
             {
@@ -73,7 +76,7 @@ namespace ChatService.Hubs
             };
             Community newCommunity = new Community()
             {
-                Id = Guid.NewGuid(),
+                Id = communityId,
                 CommunityName = communityName,
                 RoomCode = GenerateRoomCode(),
             };
@@ -97,7 +100,6 @@ namespace ChatService.Hubs
                 await _communityRepository.CreateCommunity(newCommunity);
             }
         }
-        
         private string GenerateRoomCode()
         {
             UniqueId uniqueId = new UniqueId();

@@ -20,10 +20,15 @@ namespace ChatService.Controllers
         }
 
         [HttpGet("/GetCommunities/{userId}")]
-        public async Task<IEnumerable<string>> GetCommunities(string userId)
+        public async Task<List<Community>> GetCommunities(string userId)
         {
             return await _communityRepository.GetUserCommunities(userId);
         }
         
+        [HttpGet("/GetById/{communityId}")]
+        public async Task<Community> GetById(string communityId)
+        {
+            return await _communityRepository.GetById(communityId);
+        }
     }
 }
